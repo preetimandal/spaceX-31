@@ -1,0 +1,48 @@
+<section>
+  <nav class="navFilter">
+    <h4>Filter</h4>
+    <div class="launchYear-main">
+      <h5>Launch Year</h5>
+      <div class="parentCount-2">
+          <ul (click)="LaunchYearClick($event)">
+              <li><button class="btn btn-secondary" value="2006" type="button">2006</button></li>
+              <li><button class="btn btn-secondary" value="2007" type="button">2007</button></li>
+              <li><button class="btn btn-secondary" value="2008" type="button">2008</button></li>
+              <li><button class="btn btn-secondary" value="2009" type="button">2009</button></li>
+              <li><button class="btn btn-secondary" value="2010" type="button">2010</button></li>
+              <li><button class="btn btn-secondary" value="2011" type="button">2011</button></li>
+              <li><button class="btn btn-secondary" value="2012" type="button">2012</button></li>
+              <li><button class="btn btn-secondary" value="2013" type="button">2013</button></li>
+              <li><button class="btn btn-secondary" value="2014" type="button">2014</button></li>
+              <li><button class="btn btn-secondary" value="2015" type="button">2015</button></li>
+              <li><button class="btn btn-secondary" value="2016" type="button">2016</button></li>
+              <li><button class="btn btn-secondary" value="2017" type="button">2017</button></li>
+              <li><button class="btn btn-secondary" value="2018" type="button">2018</button></li>
+              <li><button class="btn btn-secondary" value="2019" type="button">2019</button></li>
+              <li><button class="btn btn-secondary" value="2020" type="button">2020</button></li>
+          </ul>
+      </div>
+    </div>
+    <div class="SuccessfulLaunch-main">
+      <h5>Successful Launch</h5>
+      <div class="parentCount-2">
+          <ul (click)="successLaunch($event)">
+              <li><button class="btn btn-secondary" id="successlaunch" value="true">True</button></li>
+              <li><button class="btn btn-secondary" id="successlaunch" value="false">false</button></li>
+          </ul>
+      </div>
+    </div>
+
+    <div class="SuccessfullLanding-main">
+      <h5>Successful Landing</h5>
+      <div class="parentCount-2">
+          <ul (click)="successlanding($event)">
+              <li><button id="successlanding" value="true">True</button></li>
+              <li><button id="successlanding" value="false">false</button></li>
+          </ul>
+      </div>
+    </div>
+  </nav>
+
+<app-space-xdata></app-space-xdata>
+</section>

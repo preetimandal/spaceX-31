@@ -1,0 +1,17 @@
+<div *ngIf="spaceXData_onload == 0"  class="spaceX_noData"> No data found</div>
+<article id="artical1" *ngFor="let data of spaceXData_onload">
+  <div class="spaceXLaunchProgram">
+      <div class="imageDiv">
+          <img src="{{data.links.mission_patch}}" alt="Girl in a jacket" width="500" height="600">
+      </div>
+      <p class="mission_Name">{{data.mission_name}}<span> #{{data.flight_number}}</span></p>
+      <ul class="list-unstyled">
+          <li>Mission Ids : <p> {{ data.mission_id}}</p></li>
+          <li>Launch Year : <p> {{ data.launch_year}}</p></li>
+          <li>Successful Launch : <p> {{ data.launch_success}}</p></li>
+      </ul>
+  </div>
+
+
+</article>
+

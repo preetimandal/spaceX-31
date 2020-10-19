@@ -1,1 +1,203 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+  background-color: rgb(223, 223, 223);
+  font-family: 'Maven Pro', sans-serif !important;
+  font-size: 14px;
+  max-width: 1400px;
+  margin: auto;
+}
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+.navFilter {
+  /* -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1; */
+  background: #fff;
+  padding: 25px;
+  width: 250px;
+  margin-right: 15px;
+  margin-left: 10px;
+}
+
+/* Style the list inside the menu */
+.navFilter ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 0;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.spacex_heading {
+  margin-left: 10px;
+}
+.navFilter ul li {
+  margin-bottom: 18px;
+}
+.navFilter ul button {
+  background: #CAE599;
+  padding: 5px 25px;
+  border-radius: 3px;
+  color: black;
+  font-size: 12px;
+  border: none;
+  text-decoration: none;
+  /* position: relative; */
+  cursor: pointer;
+}
+.navFilter ul button:focus {
+  outline: none;
+}
+.navFilter ul button.active {
+  background: #94d027;
+}
+.navFilter h5 {
+  text-align: center;
+  border-bottom: 1px solid #c7bfbf;
+  /* width: 106px; */
+  /* padding: 5px 71px; */
+  margin: 18px 25px;
+}
+/* Style the content */
+article {
+  /* -webkit-flex: 5;
+  -ms-flex: 5;
+  flex: 5; */
+  display: inline-flex;
+}
+
+.parentCount-2 {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+  /* -webkit-column-gap: 16rem;
+  -moz-column-gap: 16rem;
+  column-gap: 16rem;
+  width: 800px; */
+  margin: 0 auto;
+}
+.spaceXLaunchProgram {
+  background: white;
+  padding: 10px;
+  width: 242px;
+  margin-right: 15px;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+.list-unstyled {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 0;
+}
+.spaceXLaunchProgram ul li {
+  display: flex;
+  font-weight: 600;
+}
+.spaceXLaunchProgram ul li p {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 500;
+  margin-left: 7px;
+}
+.imageDiv {
+  background-color: rgb(223, 223, 223);
+  height: 200px;
+}
+.imageDiv img {
+  height: 170px;
+  width: 180px;
+  margin: auto;
+  display: table;
+  padding-top: 16px;
+  padding-bottom: 10px;
+}
+.mission_Name {
+  color: #4c4cbb;
+  font-weight: 600;
+}
+.list-unstyled li {
+  margin-bottom: 12px;
+}
+.list-unstyled li p {
+  color: #4c4cbb;
+}
+.spaceX_noData {
+  background: white;
+  width: auto;
+  height: 100%;
+  min-width: 100%;
+  padding: 10px;
+}
+
+@media screen and (max-width: 1366px) {
+  .spaceXLaunchProgram {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .spaceXLaunchProgram {
+    width: 155px;
+  }
+  .imageDiv img {
+    height: 160px;
+    width: 140px;
+  }
+  .navFilter {
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .spaceXLaunchProgram {
+    width: 290px;
+  }
+
+}
+
+@media screen and (max-width: 990px) {
+  .spaceXLaunchProgram {
+    width: 200px;
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+  .navFilter ul {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 699px) {
+  section {
+    display: block;
+  }
+  .navFilter {
+    width: auto;
+    margin-bottom: 20px;
+  }
+  .navFilter ul li {
+    margin-bottom: 18px;
+    margin: auto;
+    display: table;
+    margin-bottom: 20px;
+  }
+  .spaceXLaunchProgram {
+    width: auto;
+    margin-left: 10px;
+  }
+  article {
+    display: grid;
+  }
+  .imageDiv img {
+    height: 170px;
+    width: 190px;
+  }
+}
+
+
+
